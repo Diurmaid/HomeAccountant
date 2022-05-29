@@ -1,0 +1,23 @@
+.wall {
+    display: flex;
+    flex-direction: column;
+}
+
+.wall > div {
+    background-color: var(--gray);
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px var(--purple-shadow);
+}
+
+.wall__transaction-input {
+    flex: 0 0 content;
+}
+
+.wall__transaction-filters {
+    flex: 0 0 content;
+}
+
+.wall__transactions {
+    flex: 1 1 auto;
+}

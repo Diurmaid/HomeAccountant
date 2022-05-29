@@ -1,0 +1,11 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container__wall {
+    box-sizing: border-box;
+    height: 100%;
+    min-width: 800px;
+    background-color: var(--dark-gray);
+}

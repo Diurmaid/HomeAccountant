@@ -1,0 +1,53 @@
+.transaction-input {
+    padding: 10px;
+    display: flex;
+}
+
+.transaction-input__description_field {
+    border: 2px solid var(--control-color);
+    border-radius: 6px;
+    padding: 2px 6px;
+}
+
+.transaction-input__description_field:focus {
+    border-color: var(--control-color-active);
+    box-shadow: 0px 0px 15px var(--control-color);
+    outline: none;
+}
+
+.transaction-input__description {
+    flex: 8 1 auto;
+    margin-right: 30px;
+}
+
+.transaction-input__sum {
+    flex: 1 1 auto;
+    margin-right: 30px;
+}
+
+.transaction-input__add {
+    padding: 0px;
+    flex: 0 0 content;
+    border: 2px solid var(--primary-button);
+    border-radius: 6px;
+    background-color: var(--primary-button);
+}
+
+.transaction-input__add-icon {
+    padding: 1px 2px;
+    fill: var(--control-color);
+    height: 22px;
+    width: 22px;
+}
+
+.transaction-input__add-icon:hover, .transaction-input__add-icon:active {
+    fill: var(--control-color-active);
+}
+
+.transaction-input__add:focus, .transaction-input__add:hover {
+    box-shadow: 0px 0px 15px var(--primary-button);
+}
+
+.transaction-input__add:active {
+    background-color: var(--primary-button-active);
+}
