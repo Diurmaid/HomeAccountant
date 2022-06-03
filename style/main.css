@@ -16,6 +16,9 @@
     --primary-button: #4f3558;
     --primary-button-active: #795386;
     --primary-button-text: white;
+
+    --trans-separator: #bfbfc4;
+    --delete-tran: #795386;
 }
 
 html, body, .body__wrap {
