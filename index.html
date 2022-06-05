@@ -12,13 +12,21 @@
     <div class="main-container body__wrap">
         <div class="main-container__wall wall">
             <div class="wall__transaction-input transaction-input">
-                <input id="desc" class="transaction-input__description transaction-input__description_field" type="text" placeholder="Описание"/>
-                <input id="transactions_sum" class="transaction-input__sum transaction-input__description_field" type="number" placeholder="Сумма"/>
-                <button class="transaction-input__add" onclick="addTransaction()">
-                    <svg class="transaction-input__add-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.364 60.364">
-                        <path d="M54.454,23.18l-18.609-0.002L35.844,5.91C35.845,2.646,33.198,0,29.934,0c-3.263,0-5.909,2.646-5.909,5.91v17.269
+                <input id="desc"
+                    class="transaction-input__description transaction-input__description_field" 
+                    type="text"
+                    placeholder="Описание" />
+                <input id="sum" 
+                    class="transaction-input__sum transaction-input__description_field" 
+                    type="number"
+                    placeholder="Сумма" />
+                <button class="transaction-input__add" id="add-transaction-btn">
+                    <svg class="transaction-input__add-icon" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 60.364 60.364">
+                        <path
+                            d="M54.454,23.18l-18.609-0.002L35.844,5.91C35.845,2.646,33.198,0,29.934,0c-3.263,0-5.909,2.646-5.909,5.91v17.269
                             L5.91,23.178C2.646,23.179,0,25.825,0,29.088c0.002,3.264,2.646,5.909,5.91,5.909h18.115v19.457c0,3.267,2.646,5.91,5.91,5.91
-                            c3.264,0,5.909-2.646,5.91-5.908V34.997h18.611c3.262,0,5.908-2.645,5.908-5.907C60.367,25.824,57.718,23.178,54.454,23.18z"/>
+                            c3.264,0,5.909-2.646,5.91-5.908V34.997h18.611c3.262,0,5.908-2.645,5.908-5.907C60.367,25.824,57.718,23.178,54.454,23.18z" />
                     </svg>
                 </button>
             </div>
@@ -27,37 +35,10 @@
             </div>
 
             <div id="trans-cont" class="wall__transactions transactions">
-                <div class="transactions_tran">
-                    <div class="transactions_info">
-                        <div class="transactions_desc">dafn,amnf,andf,mnafnsjvnskdf</div>
-                        <div class="transactions_sum">56547</div>
-                    </div>
-                    <div class="transaction_delete-cont">
-                        <button class="transactions_delete"></button>
-                    </div>
-                </div>
-                <div class="transactions_tran">
-                    <div class="transactions_info">
-                        <div class="transactions_desc">dafn,amnf,andf,mnafnsjvnskdf</div>
-                        <div class="transactions_sum">56547</div>
-                    </div>
-                    <div class="transaction_delete-cont">
-                        <button class="transactions_delete"></button>
-                    </div>
-                </div>
-                <div class="transactions_tran">
-                    <div class="transactions_info">
-                        <div class="transactions_desc">dafn,amnf,andf,mnafnsjvnskdf</div>
-                        <div class="transactions_sum">56547</div>
-                    </div>
-                    <div class="transaction_delete-cont">
-                        <button class="transactions_delete"></button>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-    <!-- <script src="./script.js"></script> -->
+    <script type="module" src="./src/script/main.js"></script>
 </body>
 
 </html>
