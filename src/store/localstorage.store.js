@@ -30,5 +30,13 @@ export class LocalStore {
         let newTransJson = JSON.stringify(arr);
         localStorage.setItem(LocalStorageConstant.TransactionsKey, newTransJson);
     }
+
+    deleteTransaction(transaction) {
+        let arr = this.getTransactions();
+        let deletedTranIndex = arr.findIndex((tran) => tran.ID == transaction.ID);
+        arr.splice(deletedTranIndex, 1);
+        let newTransJson = JSON.stringify(arr);
+        localStorage.setItem(LocalStorageConstant.TransactionsKey, newTransJson);
+    }
     
 }

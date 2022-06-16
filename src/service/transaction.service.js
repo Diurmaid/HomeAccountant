@@ -12,19 +12,25 @@ export class TransactionServise {
      * Получает со страницы ввод пользователя и сохраняет новую транзакцию на его основе
      */
     createNewTransaction() {
-        let desc = document.getElementById("desc").value;
-        let sum = document.getElementById("sum").value;
+        let descElement = document.getElementById("desc");
+        let sumElement = document.getElementById("sum");
+        let desc = descElement.value;
+        let sum = sumElement.value;
         if (!desc || !sum) {
             return;
         }
-        
+                
         let newTran = new Transaction(desc, sum);
         this.LocalStore.setTransaction(newTran);
 
         this.viewTransaction(newTran);
+        descElement.value = null;
+        sumElement.value = null;
     }
 
-    
+    /**
+     * Достает все транзакции из хранилища и отображает на странице
+     */
     viewTransactions() {
         let tranArr = this.LocalStore.getTransactions();
         for (let tran of tranArr) {
@@ -56,6 +62,12 @@ export class TransactionServise {
     
         let deleteBtn = document.createElement("button");
         deleteBtn.className = "transactions_delete";
+        deleteBtn.addEventListener('click', () => {
+            if(confirm('Do you want to delete a transaction?')) {
+                this.deleteTransaction(tran);
+                newTranCont.remove();
+            }
+        });
     
         info.appendChild(desc);
         info.appendChild(sum);
@@ -66,5 +78,10 @@ export class TransactionServise {
         let cont = document.getElementById("trans-cont");
         cont.appendChild(newTranCont);
     }
+
+    deleteTransaction(transaction) {
+        this.LocalStore.deleteTransaction(transaction);
+    }
 }
+
 
