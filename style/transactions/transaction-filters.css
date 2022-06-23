@@ -1,3 +1,50 @@
 .transaction-filters {
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction-filters__filter {
+    margin-right: 5px;
+    flex: 0 0 content;
+}
+
+.transaction-filters__search-btn {
+    margin-right: 10px;
+}
+
+.transaction-filters__clear-btn, .transaction-filters__search-btn {
+    border: 2px solid var(--primary-button);
+    border-radius: 6px;
+    background-color: var(--control-grey);
+    color: var(--control-color-active);
+}
+
+.transaction-filters__clear-btn:hover, .transaction-filters__search-btn:hover {
+    color: var(--control-color-active);
+    box-shadow: 0px 0px 15px var(--primary-button);
+    background-color: var(--control-color-active);
+}
+
+.transaction-filters__clear-btn:active, .transaction-filters__search-btn:active {
+    background-color: var(--control-grey);
+}
+
+.transaction-filters__filter-container {
+    display: flex;
+}
+
+.transaction-filters__buttons {
+    display: flex;
+}
+
+.transaction-filters__clear-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.transaction-filters__search-icon {
+    width: 22px;
+    height: 22px;
 }

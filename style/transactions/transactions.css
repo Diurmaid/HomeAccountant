@@ -31,21 +31,47 @@
 }
 
 .transactions_delete {
-    height: 20px;
-    width: 20px;
+    height: 28px;
+    width: 28px;
     padding: 0px;
     border: none;
     border-radius: 50%;
     margin: auto;
     background-color: var(--gray);
 }
-
-.transactions_delete:after {
-    color: var(--delete-tran);
-    font-size: 18px;
-    content: "x";
-}
-
+/* 
 .transactions_delete:hover {
     box-shadow: 0px 0px 15px var(--delete-tran);
+} */
+
+.transaction_edit {
+    height: 28px;
+    width: 28px;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    background-color: var(--gray);
+    border-radius: 50%;
+}
+
+/* .transaction_edit:hover {
+    box-shadow: 0px 0px 15px var(--delete-tran);
+} */
+
+.transaction_edit-cont {
+    flex: 0 0 content;
+    display: flex;
+    margin-right: 5px;
+}
+
+.transaction__icon {
+    fill: var(--primary-button);
+}
+
+.transaction__icon:hover {
+    fill: var(--control-color-active);
+}
+
+.transaction__icon:active {
+    fill: var(--control-grey);
 }

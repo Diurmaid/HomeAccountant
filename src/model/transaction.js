@@ -5,11 +5,16 @@ export class Transaction {
     Description;
     // Сумма, полученная или потраченная
     Sum;
+    // Дата создания
+    CreatedAt;
+    // Дата удаления
+    DeletedAt;
 
     constructor(description, sum) {
         this.ID = this.newID();
         this.Description = description;
         this.Sum = sum;
+        this.CreatedAt = new Date();
     }
 
     newID() {

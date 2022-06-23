@@ -12,26 +12,63 @@
     <div class="main-container body__wrap">
         <div class="main-container__wall wall">
             <div class="wall__transaction-input transaction-input">
-                <input id="desc"
-                    class="transaction-input__description transaction-input__description_field" 
-                    type="text"
+                <input id="desc" class="transaction-input__description transaction-input__description_field" type="text"
                     placeholder="Описание" />
-                <input id="sum" 
-                    class="transaction-input__sum transaction-input__description_field" 
-                    type="number"
+                <input id="sum" class="transaction-input__sum transaction-input__description_field" type="number"
                     placeholder="Сумма" />
+                    <input type="text">
                 <button class="transaction-input__add" id="add-transaction-btn">
-                    <svg class="transaction-input__add-icon" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 60.364 60.364">
-                        <path
-                            d="M54.454,23.18l-18.609-0.002L35.844,5.91C35.845,2.646,33.198,0,29.934,0c-3.263,0-5.909,2.646-5.909,5.91v17.269
-                            L5.91,23.178C2.646,23.179,0,25.825,0,29.088c0.002,3.264,2.646,5.909,5.91,5.909h18.115v19.457c0,3.267,2.646,5.91,5.91,5.91
-                            c3.264,0,5.909-2.646,5.91-5.908V34.997h18.611c3.262,0,5.908-2.645,5.908-5.907C60.367,25.824,57.718,23.178,54.454,23.18z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="28px" viewBox="0 0 360 360">
+                        <path id="shape0"
+                            transform="matrix(1.02400000000008 0 0 1.02400000000008 184.32 37.536170343573)" fill="none"
+                            stroke="#040717" stroke-width="26.2367999999979" stroke-linecap="square"
+                            stroke-linejoin="miter" stroke-miterlimit="2" d="M0 0L0 280.523" />
+                        <path id="shape1"
+                            transform="matrix(1.02400000000008 0 0 1.02400000000008 37.0148346443567 184.32)"
+                            fill="none" stroke="#040717" stroke-width="26.2367999999979" stroke-linecap="square"
+                            stroke-linejoin="miter" stroke-miterlimit="2" d="M0 0L288.669 0" />
                     </svg>
                 </button>
             </div>
 
             <div class="wall__transaction-filters transaction-filters">
+                <div class="transaction-filters__filter-container">
+                    <div class="transaction-filters__filter date-filter">
+                        <span class="date-filter__label">От</span>
+                        <input class="date-filter__input" type="date">
+                    </div>
+                    <div class="transaction-filters__filter date-filter">
+                        <span class="date-filter__label">До</span>
+                        <input class="date-filter__input" type="date">
+                    </div>
+                </div>
+                <div class="transaction-filters__buttons">
+                    <button class="transaction-filters__search-btn">
+                        <svg fill="#000000"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+                            class="transaction-filters__search-icon">
+                            <path
+                                d="M 24 2.8886719 C 12.365714 2.8886719 2.8886719 12.365723 2.8886719 24 C 2.8886719 35.634277 12.365714 45.111328 24 45.111328 C 29.036552 45.111328 33.664698 43.331333 37.298828 40.373047 L 52.130859 58.953125 C 52.130859 58.953125 55.379484 59.435984 57.396484 57.333984 C 59.427484 55.215984 58.951172 52.134766 58.951172 52.134766 L 40.373047 37.298828 C 43.331332 33.664697 45.111328 29.036548 45.111328 24 C 45.111328 12.365723 35.634286 2.8886719 24 2.8886719 z M 24 7.1113281 C 33.352549 7.1113281 40.888672 14.647457 40.888672 24 C 40.888672 33.352543 33.352549 40.888672 24 40.888672 C 14.647451 40.888672 7.1113281 33.352543 7.1113281 24 C 7.1113281 14.647457 14.647451 7.1113281 24 7.1113281 z" />
+                        </svg></button>
+                    <button class="transaction-filters__clear-btn">
+                        <svg height="30" id="icon" viewBox="0 0 32 32" width="25"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                    }
+                                </style>
+                            </defs>
+                            <polygon
+                                points="30 11.414 28.586 10 24 14.586 19.414 10 18 11.414 22.586 16 18 20.585 19.415 22 24 17.414 28.587 22 30 20.587 25.414 16 30 11.414" />
+                            <path
+                                d="M4,4A2,2,0,0,0,2,6V9.1709a2,2,0,0,0,.5859,1.4145L10,18v8a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2V24H16v2H12V17.1709l-.5859-.5855L4,9.1709V6H24V8h2V6a2,2,0,0,0-2-2Z" />
+                            <rect class="cls-1" data-name="&lt;Transparent Rectangle&gt;" height="32"
+                                id="_Transparent_Rectangle_" width="32" />
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <div id="trans-cont" class="wall__transactions transactions">

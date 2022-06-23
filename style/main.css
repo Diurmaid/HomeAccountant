@@ -5,7 +5,7 @@
 @import url(transactions/transactions.css);
 
 :root {
-    --dark-gray: #bfbfc4;
+    --dark-gray: #f0efef;
     --gray: #e9e7e9;
 
     --control-color-active: #05a58d;
@@ -19,6 +19,8 @@
 
     --trans-separator: #bfbfc4;
     --delete-tran: #795386;
+    
+    --control-grey: rgb(204, 200, 200);
 }
 
 html, body, .body__wrap {

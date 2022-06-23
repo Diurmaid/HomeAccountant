@@ -30,24 +30,21 @@
     flex: 0 0 content;
     border: 2px solid var(--primary-button);
     border-radius: 6px;
-    background-color: var(--primary-button);
+    background-color: var(--control-grey);
 }
 
 .transaction-input__add-icon {
     padding: 1px 2px;
-    fill: var(--control-color);
+    fill: black;
     height: 22px;
     width: 22px;
 }
 
-.transaction-input__add-icon:hover, .transaction-input__add-icon:active {
-    fill: var(--control-color-active);
-}
-
-.transaction-input__add:focus, .transaction-input__add:hover {
+.transaction-input__add:hover {
     box-shadow: 0px 0px 15px var(--primary-button);
+    background-color: var(--control-color-active);
 }
 
 .transaction-input__add:active {
-    background-color: var(--primary-button-active);
+    background-color: var(--control-grey);
 }
